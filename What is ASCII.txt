@@ -1,0 +1,39 @@
+What is ASCII?
+ASCII (American Standard Code for Information Interchange) is a character encoding standard used widely in programming and computing. This standard consists of 128 symbols, where each symbol represents a specific character, symbol, or control command. 
+
+Using ASCII in Programming:
+1. *Text Handling:*
+   - ASCII allows representation, storage, and manipulation of text in programs. For example, in C++, you can store a character and get its ASCII value:
+         char letter = 'A';
+     int ascii_value = (int) letter; // This will give you the value 65
+     
+2. *Encoding and Decoding:*
+   - Programmers use ASCII to encode and decode texts, especially when transmitting data between different systems to ensure compatibility.
+
+3. *Input and Output Operations:*
+   - ASCII codes are used for text control and flow in input and output operations. For example:
+         std::cout << "Hello, World!" << std::endl; // Uses ASCII codes to display the text
+     
+4. *Calculations and Transformations:*
+   - The numerical values of ASCII characters can be used for calculations or text transformations, such as converting lowercase letters to uppercase:
+         char lower = 'a';
+     char upper = lower - 32; // 'a' - 32 = 'A'
+     Practical Example of Using ASCII:
+Here's an example of how to print all uppercase and lowercase letters using their ASCII values in C++:
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Print uppercase letters
+    for (char c = 'A'; c <= 'Z'; ++c) {
+        cout << c << " : " << (int)c << endl;
+    }
+
+    // Print lowercase letters
+    for (char c = 'a'; c <= 'z'; ++c) {
+        cout << c << " : " << (int)c << endl;
+    }
+
+    return 0;
+}
+**Summary:**ASCII is fundamental for text encoding in programming, providing a standardized way to represent characters and symbols, which ensures compatibility and simplifies text handling and data exchange between different systems.
